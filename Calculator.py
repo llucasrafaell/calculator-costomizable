@@ -78,7 +78,7 @@ def clickIgual():
 
 def search():
     record_question = entry_question.get()
-    navegador = webdriver.Firefox()
+    navegador = webdriver.Chrome()
     navegador.get("https://brainly.com.br/")
     request_question = navegador.find_element_by_xpath('//*[@id="hero-search"]')
     request_question.click()
